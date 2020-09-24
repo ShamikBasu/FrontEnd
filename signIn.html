@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>SIGN UP</title>
+		<link href="signUpStyle.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/bootstrap.min.css">	
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<meta name="google-signin-scope" content="profile email">
+    	<meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com"> <!-- This is for google authentication-->
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script src="passScript.js"></script>
+		<script src="googleSignIn.js"></script>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+		<div class ="jumbotron" id="jumboHead"> <!-- Jumbotron because it would be screen size independent -->
+			<h1></h1> 
+			<!--This header is for image of the logo image is present in img directory -->
+		</div>
+	</head>
+	<article class="card-body mx-auto">
+	<body style="text-align:center;">
+		<div  class ="jumbotron text-centre" id="jumboBody">
+			<h5>Sign Up</h5>
+			<h2>Create Your Account</h2>
+			<p display="inline-block" class="btn group"> <!--It has two buttons for Facebook and Gmail sign up , the authentication could not be achieved -->
+
+				<a class="btn btn-google btn-danger btn-outline g-signin2" da="onSignIn"><img src="img/google-logo.png"> Sign up with Google</a> 
+			
+				<a href="" class="btn btn-primary btn-facebook btn-outline " id="btnf"><img src="img/facebook.png">
+					<i class="fab fa-facebook-f"></i>
+					Sign up with Facebook
+				</a>
+			</p>
+			<p class="divider-text" id="p1">
+        		<span class="bg-light">OR</span>
+    		</p>
+			<form>
+				<input type="text" placeholder="First Name" name="fn" required>
+				<br>
+				<br>
+				<input type="text" placeholder="Last Name" name="ln" required>
+				<br>
+				<br>
+				<input type="email" placeholder="Email Address" name="em" required>
+				<br>
+				<br>
+    			<input type="password" placeholder="Enter Password" name="ps" id="psw"  required>
+    			<br>
+    			<input type="checkbox" onclick="myFunction()"> Show Password <!-- passScript.js is used to give view to the password field-->
+			</form>
+			<p>
+				By clicking Sign Up , you agree to our 
+				<a href="">Terms and conditions</a> and our 
+				<a href="">Privacy Policies</a>
+			</p>
+			<div class="form-group">
+        			<button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+    		</div> 
+		</div>
+	</body>
+	</article>
+<html>
